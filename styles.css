@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lang-btn {
+  @apply mx-1.5 w-full rounded-full bg-gray-300 py-1 text-center font-medium text-gray-400;
+}
+.lang-btn.active {
+  @apply bg-green-400 text-white;
+}
+
+.tag-list .tag {
+  @apply rounded-sm px-3 py-2 font-medium uppercase text-gray-600 opacity-60 shadow-md;
+}
+
+.tag-list .tag.active {
+  @apply opacity-100;
+}

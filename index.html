@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Named Entity Recognition</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div
+      class="flex min-h-screen flex-col items-center overflow-hidden bg-indigo-400"
+    >
+      <div class="mt-5 max-w-xl">
+        <!-- Heading -->
+        <header class="text-center">
+          <div class="logo text-4xl font-bold uppercase text-white">
+            Commentator
+          </div>
+          <h1 class="text-xl font-light uppercase text-white">
+            Named Entity Recognition
+          </h1>
+        </header>
+
+        <!-- Language Select -->
+        <div
+          class="lang-select mx-auto mt-8 flex max-w-md flex-row rounded-lg bg-white px-2 py-3 shadow-xl"
+        >
+        <div class="lang-btn active">english</div>
+          <div class="lang-btn">hinglish</div>
+          <div class="lang-btn">hindi</div>
+        </div>
+
+        <div class="tags mx-auto mt-6 max-w-md">
+          <ul class="tag-list flex flex-row flex-wrap justify-center gap-3">
+            <li>
+              <button class="tag bg-orange-200">Person</button>
+            </li>
+            <li>
+              <button class="tag bg-yellow-200">Orgnz</button>
+            </li>
+            <li>
+              <button class="tag bg-lime-200">Product</button>
+            </li>
+            <li>
+              <button class="tag bg-cyan-200">Date</button>
+            </li>
+            <li>
+              <button class="tag bg-blue-200">Place</button>
+            </li>
+            <li>
+              <button class="tag bg-purple-200">Slang</button>
+            </li>
+            <li>
+              <button class="tag active bg-red-200">None</button>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="passage mt-6 cursor-pointer select-none rounded-lg bg-white p-5 leading-7 text-gray-800"
+          id="passage"
+        >
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, voluptatem iusto nam nulla sapiente veritatis molestiae autem consequuntur suscipit eum non quos adipisci tempora ipsa earum? Optio corporis dolorum corrupti laudantium beatae earum animi repellendus commodi iusto? Corrupti fuga ad iusto assumenda reiciendis obcaecati est similique sequi ex quidem in aut ratione tenetur alias dolorum eum deserunt modi doloribus harum, ea itaque? Sed est consectetur obcaecati cumque qui iste quibusdam, alias a sit et deleniti porro, ullam iusto minus. Fugiat.
+        </div>
+
+        <div class="flex justify-center">
+          <input
+            class="hidden"
+            type="file"
+            name="fileImport"
+            id="fileImport"
+            accept=".txt"
+          />
+          <button
+            class="file-import-btn mt-5 mr-8 block rounded-full bg-white px-5 py-2"
+          >
+            Import from file
+          </button>
+          <button
+            class="predictor-btn mt-5 mr-8 block rounded-full bg-white px-5 py-2"
+          >
+            Run Predictor
+          </button>
+          <button class="save-btn mt-5 block rounded-full bg-white px-5 py-2">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
